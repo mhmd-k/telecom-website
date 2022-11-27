@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awasome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>*اسم الموقع*</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#home" class="transition"
+            ><i class="fa-brands fa-square-pied-piper"></i
+          ></a>
+        </div>
+        <ul class="links">
+          <li><a href="#sign-up" class="active transition">انشاء حساب</a></li>
+          <li>
+            <a href="" title="log in" id="log-in" class="transition"
+              ><i class="fa-solid fa-circle-user"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start landing -->
+    <section class="landing" id="home" dir="ltr">
+      <div class="opacity">
+        <div class="landing-img">
+          <div class="content">
+            <h2>باقات جنون الصيف الشهرية</h2>
+            <p>اطلب الرمز <span>#999*</span> و استمتع بأفضل العروض</p>
+          </div>
+        </div>
+        <div class="landing-img">
+          <div class="content">
+            <h2>*أفضل الباقات الطلابية من *اسم الشركة</h2>
+            <p>اطلب الرمز <span>#777*</span> و استمتع بأفضل العروض</p>
+          </div>
+        </div>
+        <div class="landing-img">
+          <div class="content">
+            <h2>باقات حماة الديار</h2>
+            <p>اطلب الرمز <span>#669*</span> و استمتع بأفضل العروض</p>
+          </div>
+        </div>
+      </div>
+      <i class="fas fa-angle-left fa-2x" id="left-btn"></i>
+      <i class="fas fa-angle-right fa-2x" id="right-btn"></i>
+      <ul class="dots">
+        <li class="colored"></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+    <!-- end landing -->
+    <!-- sign up -->
+    <section class="sign-up" id="sign-up">
+      <h2>انشاء حساب</h2>
+      <div class="container">
+        <form action="">
+          <div class="column">
+            <div class="form-element">
+              <select name="neckName" id="" required>
+                <option selected>اللقب</option>
+                <option value="2">السيد</option>
+                <option value="3">السيدة</option>
+                <option value="4">انسة</option>
+                <option value="5">السادة</option>
+                <option value="6">الدكتور</option>
+                <option value="7">اخرى</option>
+              </select>
+            </div>
+            <div class="form-element">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="الاسم الاول"
+                required
+              />
+            </div>
+            <div class="form-element">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="اسم العائلة"
+                required
+              />
+            </div>
+            <div class="form-element">
+              <input
+                type="tel"
+                name="number"
+                id="number"
+                placeholder="رقم الهاتف"
+                required
+              />
+            </div>
+            <div class="form-element">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="البريد الالكتروني"
+                required
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="form-element">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="اسم المستخدم"
+                required
+              />
+              <label for="username"
+                >يمكن أن يكون اسم المستخدم أي نص بحد أدنى 8 أحرف وفقط.</label
+              >
+            </div>
+            <div class="form-element">
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                required
+                autocomplete="off"
+                placeholder="كلمة المرور"
+              />
+              <label for="pass"
+                >8 أحرف كحد أدنى <br />
+                يجب أن يحتوي على حرف كبير واحد <br />
+                يجب أن تحتوي على رقم واحد</label
+              >
+            </div>
+            <div class="form-element">
+              <input
+                type="password"
+                name="confirmPass"
+                id="confirmPass"
+                required
+                autocomplete="off"
+                placeholder="تاكيد كلمة المرور "
+              />
+            </div>
+            <div class="form-element">
+              <select name="city" id="city" required>
+                <option selected>المدينة</option>
+                <option value="1">دمشق</option>
+                <option value="2">حلب</option>
+                <option value="3">حمص</option>
+                <option value="4">اللاذقية</option>
+                <option value="4">طرطوس</option>
+                <option value="4">الحسكة</option>
+              </select>
+            </div>
+            <div class="form-element">
+              <select name="gender" id="gender" required>
+                <option value="male" selected>ذكر</option>
+                <option value="female">انثى</option>
+              </select>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form-element">
+              <textarea
+                name="address"
+                id="address"
+                required
+                placeholder="العنوان"
+              ></textarea>
+            </div>
+
+            <div class="form-element">
+              <input type="date" name="birthday" id="birthday" required />
+            </div>
+            <div class="form-element">
+              <select name="job" id="job" required>
+                <option value="1" selected>المهنة</option>
+                <option value="2">طالب</option>
+                <option value="2">موظف حكومي / عسكري</option>
+                <option value="2">معلم</option>
+                <option value="2">اخرى</option>
+              </select>
+            </div>
+            <div>
+              <input type="checkbox" name="rules" id="rules" value="rules" />
+              <label for="rules">أوافق على الشروط و الأحكام</label>
+            </div>
+            <button type="submit" class="transition">تسجيل</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end sign up -->
+    <!-- footer -->
+    <footer>Built by <span>Nour Abd Alghafoor</span></footer>
+    <!-- end footer -->
+    <script src="./main.js"></script>
+  </body>
+</html>
