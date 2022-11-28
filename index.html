@@ -34,6 +34,9 @@
         <ul class="links">
           <li><a href="#sign-up" class="active transition">انشاء حساب</a></li>
           <li>
+            <a href="#bill" class="active transition">استفسار عن فاتورة</a>
+          </li>
+          <li>
             <a href="" title="log in" id="log-in" class="transition"
               ><i class="fa-solid fa-circle-user"></i
             ></a>
@@ -73,9 +76,42 @@
       </ul>
     </section>
     <!-- end landing -->
+    <!-- log in -->
+    <div class="log-in">
+      <button id="close">
+        <i class="fa-regular fa-circle-xmark transition"></i>
+      </button>
+      <h3>تسجيل الدخول</h3>
+      <form action="">
+        <div class="form-element">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            required
+            placeholder="اسم المستخدم"
+          />
+        </div>
+        <div class="form-element">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            autocomplete="off"
+            placeholder="كلمة المرور"
+          />
+        </div>
+        <button type="submit">تسجيل الدخول</button>
+      </form>
+    </div>
+    <!-- end log in -->
     <!-- sign up -->
     <section class="sign-up" id="sign-up">
       <h2>انشاء حساب</h2>
+      <p>
+        لديك حساب ؟ <span><a href="" id="log-in">تسجيل الدخول</a></span>
+      </p>
       <div class="container">
         <form action="">
           <div class="column">
@@ -215,6 +251,25 @@
       </div>
     </section>
     <!-- end sign up -->
+    <!-- bill section -->
+    <section class="bill" id="bill">
+      <h2>استفسار عن فاتورة</h2>
+      <div class="container">
+        <form action="" class="bill">
+          <div class="form-element">
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phoneNumber"
+              required
+              placeholder="رقم الهاتف"
+            />
+          </div>
+          <button type="submit">ارسال</button>
+        </form>
+      </div>
+    </section>
+    <!-- end bill section -->
     <!-- footer -->
     <footer>Built by <span>Nour Abd Alghafoor</span></footer>
     <!-- end footer -->

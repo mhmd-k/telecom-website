@@ -72,6 +72,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
+  box-shadow: 0px 0px 10px 0px #3c3b3b;
 }
 header .container {
   display: flex;
@@ -240,15 +241,26 @@ header .container .links li a i {
 }
 /* end landing */
 /* sign up */
-.sign-up {
+section {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   background-color: #282727;
   color: white;
 }
-.sign-up h2 {
+section h2 {
   margin: 50px 0;
+}
+.sign-up h2 {
+  margin-bottom: 15px;
+}
+section p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+section a {
+  color: #2196f3;
 }
 .sign-up form {
   display: flex;
@@ -264,8 +276,13 @@ header .container .links li a i {
   -o-border-radius: 15px;
   box-shadow: 0px 0px 10px 0px #3c3b3b;
 }
+@media (max-width: 767px) {
+  .sign-up form {
+    padding: 20px 10px;
+  }
+}
 .sign-up form .column {
-  min-width: 300px;
+  min-width: 200px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -301,7 +318,7 @@ header .container .links li a i {
 .sign-up form .column button {
   background-color: var(--main-color);
   color: white;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -309,11 +326,127 @@ header .container .links li a i {
   -o-border-radius: 10px;
   font-weight: bold;
   font-size: 20px;
+  justify-self: end;
 }
 .sign-up form .column button:hover {
   background-color: #c07200;
 }
 /* end sign up */
+/* log in */
+.log-in {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+  color: white;
+  z-index: 15;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  display: none;
+  box-shadow: 0px 0px 10px 0px #3c3b3b;
+}
+.log-in button#close {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+.log-in button#close i {
+  color: white;
+  font-size: 20px;
+}
+.log-in button#close:hover i {
+  color: #3c3b3b;
+}
+.log-in form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.log-in form input {
+  padding: 5px 10px;
+  font-size: 17px;
+  min-width: 250px;
+}
+.log-in button[type="submit"] {
+  background-color: #3c3b3b;
+  border: 0;
+  padding: 5px 30px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* end log in */
+/* bill */
+.bill {
+  padding-bottom: 50px;
+}
+.bill .container {
+  display: grid;
+  place-items: center;
+}
+.bill form {
+  background-color: var(--bg-color);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.bill form .form-element {
+  width: 100%;
+}
+.bill form .form-element input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.bill form button {
+  width: 100%;
+  background-color: var(--main-color);
+  border: 0;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* end bill */
 /* footer */
 footer {
   background-color: var(--bg-color);

@@ -42,3 +42,17 @@ bullets.forEach((e, index) => {
     e.classList.add("colored");
   });
 });
+
+// log in buttons
+const logInBtns = document.querySelectorAll("#log-in");
+const logInForm = document.querySelector(".log-in");
+const closeBtn = document.querySelector("#close");
+logInBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    logInForm.style.display = "block";
+  });
+});
+closeBtn.addEventListener("click", () => {
+  logInForm.style.display = "none";
+});
